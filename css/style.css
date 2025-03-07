@@ -64,9 +64,11 @@ nav a {
 }
 
 /* Hero Section */
-.hero {
+/* Reduce height of the hero section */
+.hero 
+{
     background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    height: 60vh; 
+    height: 40vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,10 +77,39 @@ nav a {
     padding: 20px;
 }
 
+
 .hero-content {
     background: rgba(0, 0, 0, 0.6);
     padding: 25px;
     border-radius: 10px;
+}
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 50px;
+    background: #f8f8f8;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.step {
+    width: 30%;
+    text-align: center;
+}
+
+.step img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    color: #2a7a2e;
 }
 
 /* Features */
