@@ -11,7 +11,8 @@ function calculateLoan()
     let interestRate = parseFloat(document.getElementById("interestRate").value);
     let months = parseInt(document.getElementById("loanTerm").value);
 
-    if (isNaN(principal) || isNaN(interestRate) || isNaN(months) || principal <= 0 || months <= 0 || interestRate < 0) {
+    if (isNaN(principal) || isNaN(interestRate) || isNaN(months) || principal <= 0 || months <= 0 || interestRate < 0 && interestRate > 100) 
+    {
         document.getElementById("monthlyPayment").innerText = "Invalid input. Please enter valid values.";
         return;
     }
